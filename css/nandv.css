@@ -1,0 +1,344 @@
+@import 'https://fonts.googleapis.com/css?family=Cutive+Mono';
+body {
+    overflow-x: hidden;
+    font-family: "Cutive Mono", Arial, sans-serif;
+    background-image: url(../img/bg.jpg);
+    background-repeat: none;
+    background-attachment: fixed;
+    background-position: center center;
+    color: #000;
+}
+
+.text-muted {
+    color: #777
+}
+
+p,
+li {
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0
+}
+
+a {
+    color: #0d5a8c
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+    color: #528fbe
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700
+}
+
+.img-centered {
+    margin: 0 auto
+}
+
+.navbar-default {
+    background-color: #5c9e91;
+    border-color: transparent
+}
+
+.navbar-default .navbar-brand {
+    color: #000;
+}
+
+@media (min-width:768px) {
+    .navbar-default {
+        background-color: transparent;
+        padding: 25px 0;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+        border: 0
+    }
+    .navbar-default .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s
+    }
+    .navbar-default.navbar-shrink {
+        background: #5c9e91;
+        padding: 10px 0
+    }
+    .navbar-default.navbar-shrink .navbar-brand {
+        font-size: 1.5em
+    }
+    p {
+        font-size: 2em;
+        line-height: 1.5em;
+    }
+}
+
+header {
+    background-image: url(../img/header-bg.jpg);
+    background-repeat: none;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+    color: #fff
+}
+
+header .intro-text {
+    padding-top: 100px;
+    padding-bottom: 50px
+}
+
+header .intro-text .intro-heading {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 1.5empx;
+    margin-bottom: 25px
+}
+
+body section:first-of-type {
+    padding: 80px 0 30px 0;
+}
+
+section {
+    padding: 20px 0 10px 0;
+}
+
+section h2.section-heading {
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 15px
+}
+
+section h3 {
+    margin-top: 0;
+}
+
+section h3.section-subheading {
+    color: #0d5a8c;
+    line-height: 1.75em;
+    font-style: italic;
+    font-weight: 400;
+}
+
+@media (min-width:768px) {
+    header .intro-text {
+        padding-top: 300px;
+        padding-bottom: 200px
+    }
+    header .intro-text .intro-heading {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 3em;
+        line-height: 1.5em;
+        margin-bottom: 50px
+    }
+    section h2.section-heading {
+        font-size: 3em;
+    }
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #6ebfaf;
+    border-color: #6ebfaf;
+    text-transform: uppercase;
+    font-weight: 700
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #5c9e91;
+    border-color: #4c8c80
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    background-image: none
+}
+
+#logo {
+    padding-right: 20px;
+}
+
+#milkpaint .img-responsive {
+    margin: 0 auto;
+}
+
+#portfolio .portfolio-item {
+    margin: 0 0 15px;
+    right: 0
+}
+
+#portfolio .portfolio-item .portfolio-link {
+    display: block;
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+    background: rgba(110, 191, 175, .9) url(../img/search.svg) center center no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all ease .5s;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+    opacity: 1
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    top: 50%;
+    margin-top: -12px;
+    color: #fff
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+    margin-top: -12px
+}
+
+#portfolio .portfolio-item .portfolio-caption {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    text-align: center;
+    padding: 25px;
+}
+
+#portfolio .portfolio-item .portfolio-caption h4 {
+    text-transform: none;
+    margin: 0
+}
+
+#portfolio .portfolio-item .portfolio-caption p {
+    font-style: italic;
+    margin: 0;
+    font-size: 1.2em;
+}
+
+#portfolio * {
+    z-index: 2
+}
+
+@media (min-width:767px) {
+    #portfolio .portfolio-item {
+        margin: 0 0 30px
+    }
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
+}
+
+footer div div {
+    padding: 25px 0;
+}
+
+footer span.copyright {
+    line-height: 40px;
+    text-transform: uppercase;
+    text-transform: none
+}
+
+.portfolio-modal .modal-content {
+    border-radius: 0;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 0;
+    min-height: 100%;
+    padding: 20px 0;
+    text-align: justify
+}
+
+.portfolio-modal .modal-content h2 {
+    margin-bottom: 15px;
+    font-size: 3em
+}
+
+.portfolio-modal .modal-content p {
+    margin-bottom: 30px
+}
+
+.portfolio-modal .modal-content li,
+.portfolio-modal .modal-content p.item-intro {
+    margin: 20px 0 30px;
+    font-style: italic;
+}
+
+.portfolio-modal .modal-content img {
+    margin-bottom: 30px
+}
+
+.portfolio-modal .close-modal {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    top: 25px;
+    right: 25px;
+    cursor: pointer
+}
+
+.portfolio-modal .close-modal:hover {
+    opacity: .3
+}
+
+::-moz-selection {
+    text-shadow: none;
+    background: #6ebfaf
+}
+
+::selection {
+    text-shadow: none;
+    background: #6ebfaf
+}
+
+img::selection {
+    background: 0 0
+}
+
+img::-moz-selection {
+    background: 0 0
+}
+
+body {
+    webkit-tap-highlight-color: #6ebfaf
+}
+
+button.close {
+    font-size: 10em;
+}
